@@ -2,26 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* 
+   This is used to create pure-CSS menus, ensuring a menu that's on the far-right edge doesn't overflow past
+   the page edge and instead "pushes" the menu text to the left so that it can all be seen.  There may be better
+   ways to do this using pure-CSS (no javascript) but I've got an MBA, not a PhD.  :)
+*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.rtl-fix {
+  direction: rtl;
 }
