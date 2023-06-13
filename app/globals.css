@@ -11,3 +11,7 @@
 .rtl-fix {
   direction: rtl;
 }
+
+.ltr-fix {
+  direction: ltr;
+}
