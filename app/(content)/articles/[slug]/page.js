@@ -2,7 +2,8 @@ import { getSlugs, getDynamicRouteDocument } from '@/lib/sanityClient';
 import { notFound } from 'next/navigation';
 import { PortableText } from '@portabletext/react';
 
-export const runtime = 'edge';
+// export const runtime = 'edge';
+export const dynamicParams=false;
 
 export async function generateStaticParams() {
 
