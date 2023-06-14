@@ -1,17 +1,13 @@
 import './globals.css';
 
-import { getSiteSettings } from '@/lib/sanityClient';
-
 import RootBackground from '@/components/base/RootBackground';
 import Container from '@/components/base/Container';
 import Header from "@/components/composite/Header";
 import Footer from "@/components/composite/Footer";
 
-const siteSettings = await getSiteSettings();
-
 export const metadata = {
-  title: siteSettings.title,
-  description: siteSettings.description,
+  title: 'do not break your promises',
+  description: 'what am I doing wrong here',
 }
 
 export default function RootLayout({ children }) {

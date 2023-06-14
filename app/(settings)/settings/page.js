@@ -1,4 +1,4 @@
-export default async function ArticlePage(){
+export default async function SettingsPage(){
   return(
     <div>
       Site Settings page goes here

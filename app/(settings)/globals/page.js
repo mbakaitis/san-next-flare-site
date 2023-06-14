@@ -1,4 +1,4 @@
-export default async function ArticlePage(){
+export default async function GlobalsPage(){
   return(
     <div>
       Global Content page goes here

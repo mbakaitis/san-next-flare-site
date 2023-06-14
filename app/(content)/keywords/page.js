@@ -1,4 +1,4 @@
-export default async function ArticlePage(){
+export default async function KeywordPage(){
   return(
     <div>
       Keywords page goes here
