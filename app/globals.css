@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-   This is used to create pure-CSS menus, ensuring a menu that's on the far-right edge doesn't overflow past
-   the page edge and instead "pushes" the menu text to the left so that it can all be seen.  There may be better
-   ways to do this using pure-CSS (no javascript) but I've got an MBA, not a PhD.  :)
-*/
-
 .rtl-fix {
   direction: rtl;
 }

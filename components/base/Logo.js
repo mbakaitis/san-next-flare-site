@@ -1,5 +1,5 @@
 export default function Logo( {className}){
   return (
-    <div className={className}>Logo!</div>
+    <div className={className}>Sample Site</div>
   )
 }
