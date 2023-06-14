@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+
+OK, so this is an example file and not something rigorous, right?
+
+What we're doing here is simplifying some things by setting global styles
+for H1 and other tags.  It would be annoying (and error prone) if we have
+to type out an _exact_ set of tailwind classes on every H1 (assuming we want
+all H1 tags to look identical).
+
+So this is an example to show how we can set some 'global styles'.
+
+What's nice is that if we pick an H1 tag, then change one of these values
+in a component, these will be overridden.  Yay for CSS.
+
+At the bottom? There is a rtl and ltr class that lets us style our menu as
+a pure-CSS drop-down on the right-edge of the screen.  These let the menu
+drop-down AND not overflow off the right edge of the screen (which is the default).
+
+*/
+
+@layer base{
+  h1, h2, h3, h4, h5 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-6xl;
+    @apply p-4;
+    @apply mb-10;
+  }
+}
+
 .rtl-fix {
   direction: rtl;
 }
